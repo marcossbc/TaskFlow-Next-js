@@ -23,14 +23,17 @@ export default function RegisterPage() {
       toast.success(state.message);
       setTimeout(() => {
         router.push("/login");
-      }, 1200);
+      }, 1300);
     } else {
       toast.error(state.message);
     }
   }, [state, router]);
 
   return (
+
+  
     <div className="min-h-screen bg-[#0B0F19] text-gray-100 font-sans selection:bg-indigo-500 selection:text-white flex overflow-hidden relative">
+       
       
       {/* Background Glows */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
@@ -52,13 +55,14 @@ export default function RegisterPage() {
 
         {/* Big Catchy Text */}
         <div className="space-y-6 relative z-10 my-auto">
+          
           <div className="inline-flex items-center space-x-2 bg-purple-500/10 border border-purple-500/30 px-3 py-1.5 rounded-full text-xs font-semibold text-purple-400 tracking-wide uppercase">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Get Started Free</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
             Create Your <br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r  from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">
               NEW ACCOUNT 
             </span>
           </h1>
