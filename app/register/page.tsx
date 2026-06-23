@@ -59,7 +59,7 @@ export default function RegisterPage() {
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
             Create Your <br />
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">
-              Powerful Workspace
+              NEW ACCOUNT 
             </span>
           </h1>
           <p className="text-gray-400 font-light max-w-md leading-relaxed">
@@ -82,7 +82,7 @@ export default function RegisterPage() {
               Create a new account
             </h2>
             <p className="text-sm text-gray-400 font-light">
-              Get started with your free 14-day trial workspace.
+              Get started with your free account google authuaction.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function RegisterPage() {
                   name="name"
                   type="text"
                   autoComplete="name"
-                  placeholder="John Doe"
+                  placeholder="username"
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-800 bg-[#0D1220] text-sm text-gray-100 placeholder:text-gray-600 focus:outline-none focus:border-indigo-500 transition-all duration-150"
                 />
@@ -115,7 +115,7 @@ export default function RegisterPage() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  placeholder="you@example.com"
+                  placeholder="gmail@example.com"
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-800 bg-[#0D1220] text-sm text-gray-100 placeholder:text-gray-600 focus:outline-none focus:border-indigo-500 transition-all duration-150"
                 />

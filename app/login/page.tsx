@@ -63,9 +63,9 @@ export default function LoginPage() {
             <span>Welcome Back</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
-            Be a Part of <br />
+            Login For account <br />
             <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Something Beautiful
+              Sign in to your account
             </span>
           </h1>
           <p className="text-gray-400 font-light max-w-md leading-relaxed">
