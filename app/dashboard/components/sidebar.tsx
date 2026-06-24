@@ -143,7 +143,7 @@ export default function Sidebar() {
       <div className="p-4 bg-[#05070D]/80 border-t border-gray-900/60 relative z-10">
         <div className="flex flex-col gap-1">
           <Link
-            href="/help"
+            href="/dashboard/help"
             className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-[12.5px] text-gray-500 hover:text-gray-300 hover:bg-gray-900/30 transition-all duration-200"
           >
             <HelpCircle size={15} className="text-gray-600" />
