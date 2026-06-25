@@ -20,7 +20,7 @@ export default function ProfilePage() {
   const { data: session } = useSession();
   const [isUpdating, setIsUpdating] = useState(false);
 
-  const username = session?.user?.name || "User";
+  const username = session?.user?.name || "IMG";
   const email = session?.user?.email || "user@example.com";
   const image = session?.user?.image;
 
