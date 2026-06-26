@@ -6,7 +6,7 @@ const tabs = [
   { key: "all", label: "All Tasks" },
   { key: "todo", label: "To Do" },
   { key: "in-progress", label: "In Progress" },
-  { key: "done", label: "Completed" }, 
+  { key: "done", label: "Completed" },
 ];
 
 export default function FilterTabs({ activeFilter }: { activeFilter: string }) {
@@ -21,7 +21,7 @@ export default function FilterTabs({ activeFilter }: { activeFilter: string }) {
     <div className="flex items-center gap-1 sm:gap-2 border-b border-gray-900 pb-px overflow-x-auto no-scrollbar">
       {tabs.map(({ key, label }) => {
         const isActive = activeFilter === key;
-        
+
         return (
           <button
             key={key}
