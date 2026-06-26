@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { getUserTasks } from "../form/(tasks)/actions";
 import { Task } from "../types/Task";
-// import FilterTabs from "./components/FilterTabs";
+import FilterTabs from "./components/FilterTabs";
 import TaskList from "./components/TaskList";
 import TaskSkeleton from "./components/TaskSkeleton";
 import WelcomePage from "./components/WelcomePage";
@@ -32,7 +32,7 @@ export default async function Page({ searchParams }: Props) {
           <WelcomePage tasks={tasks} />
         </header>
         
-        {/* <FilterTabs activeFilter={filter} /> */}
+        <FilterTabs activeFilter={filter} />
         
         {/* Qaybta Liiska Task-yada oo leh Loading Skeleton */}
         <main className="w-full">
