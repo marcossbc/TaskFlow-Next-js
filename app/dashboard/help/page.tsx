@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Is my workspace data secure and encrypted?",
-    answer: "Absolutely. TaskFlow encrypts data at rest and in transit using industry-standard AES-256 encryption, backed by NextAuth secure session management."
+    answer: "Absolutely. TaskFlow encrypts data at rest and in transit using industry-standard AES-256 encryption, backed by NextAuth secure session managements."
   }
 ];
 
