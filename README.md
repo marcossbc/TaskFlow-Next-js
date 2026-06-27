@@ -47,6 +47,9 @@ It includes authentication, task management, analytics, and a responsive UI.
 
 ---
 
+<p align="center">
+  <img src="./public/../tasks.png" alt="TaskFlows Dashboard" width="100%">
+</p>
 ## 📂 Project Structure
 
 ```bash
