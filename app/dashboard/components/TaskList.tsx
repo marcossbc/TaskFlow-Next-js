@@ -12,7 +12,7 @@ export default async function TaskList({ filter }: { filter: string }) {
       ? allTasks
       : allTasks.filter((task) => task.status === filter);
 
-  const getPriorityStyles = (priority: string) => {
+  const getPriorityStyles = (priority?: string) => {
     switch (priority?.toLowerCase()) {
       case "urgent":
         return "bg-purple-500/10 border-purple-500/30 text-purple-400";
@@ -20,7 +20,7 @@ export default async function TaskList({ filter }: { filter: string }) {
         return "bg-red-500/10 border-red-500/20 text-red-400";
       case "medium":
         return "bg-amber-500/10 border-amber-500/20 text-amber-400";
-      default: // Low
+      default: 
         return "bg-emerald-500/10 border-emerald-500/20 text-emerald-400";
     }
   };
@@ -95,10 +95,11 @@ export default async function TaskList({ filter }: { filter: string }) {
                   </span>
                 </div>
 
+                {/* Halkan waxaa lagu daray (task.priority || "low") si looga badbaadiyo TypeScript Error-ka */}
                 <div
-                  className={`px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider border ${getPriorityStyles(task.priority)}`}
+                  className={`px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider border ${getPriorityStyles(task.priority || "low")}`}
                 >
-                  {task.priority}
+                  {task.priority || "low"}
                 </div>
               </div>
             </li>
