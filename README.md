@@ -14,7 +14,10 @@
 
 **TaskFlows** is a modern full-stack productivity and task management workspace built with:
 
-Next.js App Router • React • TypeScript • MongoDB Atlas
+- Next.js App Router
+- React
+- TypeScript
+- MongoDB Atlas
 
 It includes authentication, task management, analytics, and a responsive UI.
 
@@ -22,13 +25,13 @@ It includes authentication, task management, analytics, and a responsive UI.
 
 ## ✨ Features
 
-- 🔒 Google OAuth 2.0 authentication (NextAuth.js)
-- 📊 Task analytics dashboard
-- 🗂️ Dynamic filtering (All / To Do / In Progress / Completed)
-- 📅 Calendar scheduling system
-- ⚡ Priority system (Urgent / High / Medium / Low)
-- 📱 Responsive mobile sidebar
-- 🔐 Secure server actions (Next.js)
+- 🔒 Google OAuth 2.0 Authentication (NextAuth.js)
+- 📊 Task Analytics Dashboard
+- 🗂️ Dynamic Filtering (All / To Do / In Progress / Completed)
+- 📅 Calendar Scheduling System
+- ⚡ Priority System (Urgent / High / Medium / Low)
+- 📱 Responsive Mobile Sidebar
+- 🔐 Secure Server Actions (Next.js)
 
 ---
 
@@ -37,8 +40,8 @@ It includes authentication, task management, analytics, and a responsive UI.
 - Next.js 15
 - React 19
 - TypeScript
-- NextAuth.js
 - Tailwind CSS
+- NextAuth.js
 - MongoDB Atlas (Mongoose)
 - Lucide React Icons
 
@@ -56,20 +59,37 @@ It includes authentication, task management, analytics, and a responsive UI.
 │   ├── api/
 │   │   └── auth/
 │   └── page.tsx
+│
 ├── components/
 │   ├── Sidebar.tsx
 │   ├── FilterTabs.tsx
 │   └── TaskList.tsx
+│
 ├── public/
 ├── package.json
 └── README.md
-🚀 Getting Started
-1. Clone Repo
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/your-username/task-flow-next-js.git
 cd task-flow-next-js
-2. Install Dependencies
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 npm install
-3. Create .env.local
+```
+
+### 3️⃣ Create `.env.local`
+
+```env
 MONGODB_URI=your_mongodb_connection_string_here
 
 GOOGLE_CLIENT_ID=your_google_client_id_here
@@ -77,20 +97,48 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret_here
 
 NEXTAUTH_SECRET=your_nextauth_secret_here
 NEXTAUTH_URL=http://localhost:3000
-▶️ Run Project
+```
+
+---
+
+## ▶️ Run Development Server
+
+```bash
 npm run dev
+```
 
-Open:
+Open your browser and visit:
 
+```text
 http://localhost:3000
-🏗️ Build & Start
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash
 npm run build
 npm start
-🌐 Deployment (Vercel)
-Push to GitHub
-Import to Vercel
-Add environment variables
-Update NEXTAUTH_URL for production
-📄 License
+```
+
+---
+
+## 🌐 Deployment (Vercel)
+
+1. Push project to GitHub
+2. Import repository into Vercel
+3. Add all environment variables
+4. Update `NEXTAUTH_URL` with your production domain
+
+Example:
+
+```env
+NEXTAUTH_URL=https://your-domain.vercel.app
+```
+
+---
+
+## 📄 License
 
 MIT License © 2026
