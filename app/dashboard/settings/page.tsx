@@ -24,7 +24,7 @@ export default function SettingsPage() {
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSaved(true);
-    setTimeout(() => setIsSaved(false), 3000); // Wuxuu baaba'ayaa 3 ilbiriqsi ka dib
+    setTimeout(() => setIsSaved(false), 3000); 
   };
 
   const tabs = [
@@ -53,7 +53,7 @@ export default function SettingsPage() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        {/* 2. SIDE TABS NAVIGATION */}
+      
         <nav className="w-full md:w-64 flex flex-row md:flex-col gap-1.5 p-1.5 bg-gray-950/40 border border-gray-800/60 rounded-xl backdrop-blur-md overflow-x-auto shrink-0">
           {tabs.map(({ id, label, icon: Icon }) => {
             const isActive = activeTab === id;
@@ -75,10 +75,10 @@ export default function SettingsPage() {
           })}
         </nav>
 
-        {/* 3. SETTINGS CONTENT PANEL */}
+        
         <div className="flex-1 w-full bg-[#070A13]/60 border border-gray-800/60 rounded-2xl shadow-2xl p-5 md:p-6 backdrop-blur-md relative">
           
-          {/* Notification Alert markay guuleysato */}
+       
           {isSaved && (
             <div className="absolute top-4 right-4 flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1.5 rounded-lg text-xs font-medium animate-fade-in-down">
               <CheckCircle size={14} />

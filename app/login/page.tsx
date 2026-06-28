@@ -42,7 +42,6 @@ export default function LoginPage() {
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
 
-      {/* LEFT SIDE: Visual Brand Showcase (Hidden on Mobile) */}
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-gray-950 via-[#0D1220] to-gray-950 border-r border-gray-800/60 p-12 flex-col justify-between relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-indigo-500/5 rounded-full blur-[80px]" />
         
@@ -79,7 +78,6 @@ export default function LoginPage() {
         </p>
       </div>
 
-      {/* RIGHT SIDE: Clean Modern Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-8 relative z-10">
         <div className="w-full max-w-md space-y-8">
           
@@ -93,7 +91,7 @@ export default function LoginPage() {
           </div>
 
           <div className="bg-gradient-to-b from-gray-900/50 to-gray-950/50 border border-gray-800/80 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-xl">
-            {/* Google OAuth Button */}
+            
             <button
               type="button"
               onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
