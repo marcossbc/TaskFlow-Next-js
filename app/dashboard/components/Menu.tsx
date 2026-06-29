@@ -28,7 +28,7 @@ const Menu = ({ task }: { task: Task }) => {
             {/* Edit */}
             <button className='block w-full text-left px-4 py-2 text-sm text-gray-500 hover:bg-gray-100'>
               <Link
-                href={`/dashboard/tasks/${task._id}/edit`}
+                href={''}
                 className='flex gap-1'
               >
                 <Edit size={20} />
