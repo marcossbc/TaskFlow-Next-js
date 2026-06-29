@@ -10,6 +10,13 @@
 
 ---
 
+## 📖 HomePage
+
+
+<p align="center">
+  <img src="./public/../images/home.png" alt="TaskFlows Dashboard" width="100%">
+</p>
+
 ## 📖 About
 
 **TaskFlows** is a modern full-stack productivity and task management workspace built with:
@@ -48,7 +55,7 @@ It includes authentication, task management, analytics, and a responsive UI.
 ---
 
 <p align="center">
-  <img src="./public/../tasks.png" alt="TaskFlows Dashboard" width="100%">
+  <img src="./public/../images/tasks.png" alt="TaskFlows Dashboard" width="100%">
 </p>
 ## 📂 Project Structure
 
